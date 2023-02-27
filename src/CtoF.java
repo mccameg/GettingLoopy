@@ -17,7 +17,7 @@ public class CtoF {
             {
                 celsiusTemp = in.nextDouble(); // if the input is a valid number, the input will be stored in celsiusTemp
                 in.nextLine(); // clears the buffer
-                if (celsiusTemp > -273.15 )
+                if (celsiusTemp > -273.15 ) // if the input is greater than absolute zero, the if block will run. It will run the calculation, output the answer and make the while statement not true so the program terminates
                 {
                     fahrenheitTemp = celsiusTemp * 9 / 5 + 32; // if the input is valid, the input will be converted to fahrenheit with this formula. The converted value will be stored in the fahrenheitTemp variable
                     System.out.println("The equivalent temperature in Fahrenheit is " + fahrenheitTemp + " degrees"); // if the input is valid, the converted temp in fahrenheit will display as an output
